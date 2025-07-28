@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToxMD eCW FHIR - Production JWK Endpoint</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+      }
+      .header {
+        color: #dc3545;
+        border-bottom: 2px solid #dc3545;
+        padding-bottom: 10px;
+      }
+      .info-box {
+        background: #f8f9fa;
+        border: 1px solid #dc3545;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+      .endpoint {
+        font-family: monospace;
+        background: #f5f5f5;
+        padding: 5px;
+        border-radius: 3px;
+      }
+      .warning {
+        background: #f8d7da;
+        border: 1px solid #dc3545;
+        color: #721c24;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>🏥 ToxMD eCW FHIR Integration</h1>
+      <h2>Production JWK Endpoint</h2>
+    </div>
+
+    <div class="info-box">
+      <h3>📍 JWK Endpoints</h3>
+      <p>
+        <strong>Standard Location:</strong>
+        <span class="endpoint">/.well-known/jwks.json</span>
+      </p>
+      <p>
+        <strong>Direct Access:</strong> <span class="endpoint">/jwks.json</span>
+      </p>
+    </div>
+
+    <div class="info-box">
+      <h3>🔑 Environment Details</h3>
+      <p><strong>Environment:</strong> Production</p>
+      <p>
+        <strong>Client ID:</strong>
+        <span class="endpoint"
+          >m9DzQVWDoh6U4DsuIix_pDQedavlXlD7PmEGpw18iQc</span
+        >
+      </p>
+      <p>
+        <strong>Key ID:</strong> <span class="endpoint">d350ee8c03547e18</span>
+      </p>
+      <p><strong>Practice:</strong> Legacy Pain Associates</p>
+    </div>
+
+    <div class="info-box warning">
+      <h3>🚨 Production Environment</h3>
+      <p>This endpoint serves keys for eCW production environment.</p>
+      <p>These keys are used for live patient data access.</p>
+    </div>
+
+    <div class="info-box">
+      <h3>🔗 Quick Links</h3>
+      <p><a href="/.well-known/jwks.json">View JWK Set</a></p>
+      <p><a href="/jwks.json">View JWK Set (Direct)</a></p>
+    </div>
+  </body>
+</html>
